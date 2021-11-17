@@ -758,10 +758,10 @@ body.lock {
   display: inline-block;
   border-radius: 43px;
   opacity: 0.5;
-  -webkit-transition: opacity 0.3s ease 0s, border 0.3s ease 0s, -webkit-transform 1.5s ease 0.4s;
-  transition: opacity 0.3s ease 0s, border 0.3s ease 0s, -webkit-transform 1.5s ease 0.4s;
-  transition: transform 1.5s ease 0.4s, opacity 0.3s ease 0s, border 0.3s ease 0s;
-  transition: transform 1.5s ease 0.4s, opacity 0.3s ease 0s, border 0.3s ease 0s, -webkit-transform 1.5s ease 0.4s;
+  -webkit-transition: opacity 0.3s ease 0s, border 0.3s ease 0s, -webkit-transform 1.2s ease 0.4s;
+  transition: opacity 0.3s ease 0s, border 0.3s ease 0s, -webkit-transform 1.2s ease 0.4s;
+  transition: transform 1.2s ease 0.4s, opacity 0.3s ease 0s, border 0.3s ease 0s;
+  transition: transform 1.2s ease 0.4s, opacity 0.3s ease 0s, border 0.3s ease 0s, -webkit-transform 1.2s ease 0.4s;
   border: 2px solid transparent;
 }
 
