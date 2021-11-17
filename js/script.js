@@ -33,6 +33,11 @@ $(document).ready(function() {
 		draggable:false,
 		responsive:[
 			{
+				breakpoint: 950,
+				settings: {
+					arrows:false,
+				}
+			},{
 				breakpoint: 769,
 				settings: {
 					slidesToShow:1,
