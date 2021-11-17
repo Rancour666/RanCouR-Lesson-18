@@ -856,6 +856,11 @@ body {
   height: 270px;
 }
 
+.slider__item:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .slider__item img {
   padding: 0px 15px;
   position: absolute;
@@ -866,6 +871,8 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 @media (max-width: 1024px) {
