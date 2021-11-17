@@ -1066,12 +1066,12 @@ body.lock {
 
 .slider .slick-arrow.slick-prev {
   left: 0;
-  background: url("../../img/Slider/slider_icon_left.svg") 0 0/100% no-repeat;
+  background: url("../img/Slider/slider_icon_left.svg") 0 0/100% no-repeat;
 }
 
 .slider .slick-arrow.slick-next {
   right: 0;
-  background: url("../../img/Slider/slider_icon_right.svg") 0 0/100% no-repeat;
+  background: url("../img/Slider/slider_icon_right.svg") 0 0/100% no-repeat;
 }
 
 .work__cards {
