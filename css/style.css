@@ -1322,13 +1322,13 @@ body.lock {
 
 @media (max-width: 560px) {
   .dishes__body {
-    margin: 0px 20px 30px 20px;
+    margin: 0px 0px 30px 0px;
   }
 }
 
 @media (max-width: 425px) {
   .dishes__body {
-    margin: 0px 5px 0px 5px;
+    margin: 0px;
   }
 }
 
@@ -1606,13 +1606,13 @@ body.lock {
 
 @media (max-width: 560px) {
   .chefs__body {
-    margin: 0px 20px 30px 20px;
+    margin: 0px 0px 30px 0px;
   }
 }
 
 @media (max-width: 425px) {
   .chefs__body {
-    margin: 0px 5px 0px 5px;
+    margin: 0px;
   }
 }
 
@@ -1802,13 +1802,13 @@ body.lock {
 
 @media (max-width: 560px) {
   .recipes__body {
-    margin: 0px 20px 30px 20px;
+    margin: 0px 0px 30px 0px;
   }
 }
 
 @media (max-width: 425px) {
   .recipes__body {
-    margin: 0px 5px 0px 5px;
+    margin: 0px;
   }
 }
 
@@ -1824,35 +1824,35 @@ body.lock {
 
 @media (max-width: 1150px) {
   .recipes__content {
-    -ms-grid-rows: (minmax(150px, 1fr))[3];
+    -ms-grid-rows: (minmax(100px, 1fr))[3];
     -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
-        grid-template: repeat(3, minmax(150px, 1fr))/repeat(auto-fit, minmax(400px, 1fr));
+        grid-template: repeat(3, minmax(100px, 1fr))/repeat(auto-fit, minmax(400px, 1fr));
   }
 }
 
 @media (max-width: 1024px) {
   .recipes__content {
-    -ms-grid-rows: (minmax(150px, 1fr))[3];
+    -ms-grid-rows: (minmax(100px, 1fr))[3];
     -ms-grid-columns: (minmax(380px, 1fr))[auto-fit];
-        grid-template: repeat(3, minmax(150px, 1fr))/repeat(auto-fit, minmax(380px, 1fr));
+        grid-template: repeat(3, minmax(100px, 1fr))/repeat(auto-fit, minmax(380px, 1fr));
     padding: 0px;
   }
 }
 
 @media (max-width: 768px) {
   .recipes__content {
-    -ms-grid-rows: (minmax(150px, 1fr))[3];
+    -ms-grid-rows: (minmax(100px, 1fr))[3];
     -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
-        grid-template: repeat(3, minmax(150px, 1fr))/repeat(auto-fit, minmax(350px, 1fr));
+        grid-template: repeat(3, minmax(100px, 1fr))/repeat(auto-fit, minmax(350px, 1fr));
     padding: 0px;
   }
 }
 
 @media (max-width: 425px) {
   .recipes__content {
-    -ms-grid-rows: (minmax(150px, 1fr))[3];
+    -ms-grid-rows: (minmax(100px, 1fr))[3];
     -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-        grid-template: repeat(3, minmax(150px, 1fr))/repeat(auto-fit, minmax(300px, 1fr));
+        grid-template: repeat(3, minmax(100px, 1fr))/repeat(auto-fit, minmax(300px, 1fr));
   }
 }
 
@@ -1863,7 +1863,6 @@ body.lock {
   border-radius: 7px;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
-  border-radius: 7px;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1882,6 +1881,10 @@ body.lock {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: inline-block;
 }
 
 .big__back-icon img {
@@ -1898,6 +1901,9 @@ body.lock {
 .big__body {
   padding: 60px 90px;
   text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 @media (max-width: 550px) {
@@ -1920,9 +1926,6 @@ body.lock {
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   position: relative;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
 }
 
 .body-big__meal {
@@ -1945,6 +1948,12 @@ body.lock {
   transition: all 0.5s ease 0s;
 }
 
+@media (max-width: 425px) {
+  .body-big__meal {
+    margin: 0px 0px 20px 0px;
+  }
+}
+
 .body-big__date {
   font-family: 'HelveticaNeue';
   font-weight: 400;
@@ -1954,6 +1963,12 @@ body.lock {
   margin: 0px 0px 25px 0px;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
+}
+
+@media (max-width: 425px) {
+  .body-big__date {
+    margin: 0px 0px 20px 0px;
+  }
 }
 
 .body-big__text {
@@ -1966,9 +1981,12 @@ body.lock {
   margin: 0px 0px 45px 0px;
   -webkit-transition: all 0.6s ease 0s;
   transition: all 0.6s ease 0s;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+}
+
+@media (max-width: 425px) {
+  .body-big__text {
+    margin: 0px 0px 20px 0px;
+  }
 }
 
 .body-big__name {
@@ -1980,6 +1998,12 @@ body.lock {
   margin: 0px 0px 60px 0px;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
+}
+
+@media (max-width: 425px) {
+  .body-big__name {
+    margin: 0px 0px 20px 0px;
+  }
 }
 
 .body-big__eye-comments {
@@ -2235,13 +2259,13 @@ body.lock {
 
 @media (max-width: 560px) {
   .socials__body {
-    margin: 0px 20px 60px 20px;
+    margin: 0px 0px 60px 0px;
   }
 }
 
 @media (max-width: 425px) {
   .socials__body {
-    margin: 0px 5px 30px 5px;
+    margin: 0px 0px 30px 0px;
   }
 }
 
