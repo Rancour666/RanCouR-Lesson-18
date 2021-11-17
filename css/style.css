@@ -607,8 +607,8 @@ body.lock {
 }
 
 .fullscreen__title.active {
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
 }
 
 @media (max-width: 1024px) {
@@ -690,8 +690,8 @@ body.lock {
 }
 
 .fullscreen__subtitle.active {
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
 }
 
 @media (max-width: 425px) {
@@ -731,8 +731,8 @@ body.lock {
 }
 
 .fullscreen__button.active {
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
 }
 
 .fullscreen__button:hover {
@@ -776,8 +776,8 @@ body.lock {
 }
 
 .fullscr-card.active {
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
 }
 
 @media (max-width: 320px) {
