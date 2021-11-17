@@ -8,10 +8,16 @@ $(document).ready(function() {
 	$(document).on('click', '.checkbox', function(event) {
 		if($(this).hasClass('active')){
 			$(this).find('input').prop('checked', false);
+			$('body').toggleClass('active');
 		}else{
 			$(this).find('input').prop('checked', true);
 		}
 		$(this).toggleClass('active');
+		$('.fullscreen__image').toggleClass('active');
+		$('.fullscreen__title').toggleClass('active');
+		$('.fullscreen__subtitle').toggleClass('active');
+		$('.fullscreen__button').toggleClass('active');
+		$('.fullscr-card').toggleClass('active');
 		return false;
 	});
 
