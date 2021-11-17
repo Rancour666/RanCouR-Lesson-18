@@ -407,8 +407,10 @@ body.lock {
     height: 100%;
     overflow: auto;
     background-color: rgba(48, 48, 48, 0.99);
-    -webkit-transition: all 0.4s ease-out 0s;
-    transition: all 0.4s ease-out 0s;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: all 0.5s ease-out 0s;
+    transition: all 0.5s ease-out 0s;
   }
 }
 
@@ -432,6 +434,8 @@ body.lock {
 .header__menu.active {
   top: 0;
   right: 0;
+  -webkit-transform: scale(0.98) rotate(360deg);
+          transform: scale(0.98) rotate(360deg);
 }
 
 .menu {
