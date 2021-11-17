@@ -613,8 +613,8 @@ body.lock {
 }
 
 .fullscreen__title.active {
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
+  -webkit-transform: translate(0, 100%) scale(0.7);
+          transform: translate(0, 100%) scale(0.7);
 }
 
 @media (max-width: 1024px) {
@@ -1906,8 +1906,8 @@ body.lock {
   color: #FFFFFF;
   min-width: 411px;
   margin: 0px 0px 45px 0px;
-  -webkit-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -1967,8 +1967,8 @@ body.lock {
 
 @media (min-width: 1025px) {
   .body-big {
-    -webkit-transition: all 0.7s ease 0s;
-    transition: all 0.7s ease 0s;
+    -webkit-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
   }
   .body-big:hover {
     -webkit-transform: scale(1.01);
@@ -2034,8 +2034,8 @@ body.lock {
   line-height: 30px;
   color: #FFFFFF;
   margin: 0px 0px 10px 0px;
-  -webkit-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
 }
 
 .small__icons-row {
@@ -2145,8 +2145,8 @@ body.lock {
 
 @media (min-width: 1025px) {
   .small {
-    -webkit-transition: all 0.5s ease 0s;
-    transition: all 0.5s ease 0s;
+    -webkit-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
   }
   .small:hover {
     background: #34c759a1;
