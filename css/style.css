@@ -1809,6 +1809,8 @@ body.lock {
   border-radius: 7px;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
+  border-radius: 7px;
+  overflow: hidden;
 }
 
 .big__image {
@@ -1819,9 +1821,6 @@ body.lock {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 7px;
-  -webkit-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
 }
 
 .big__back-icon img {
@@ -1835,12 +1834,30 @@ body.lock {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.big__meal {
+.big__body {
   position: absolute;
-  top: 60px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  width: 100%;
+  height: 100%;
+  padding: 60px 90px;
+  text-align: center;
+}
+
+.body-big {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.body-big__meal {
   font-family: 'HelveticaNeue-CondensedBlack';
   font-weight: 900;
   font-size: 10px;
@@ -1854,33 +1871,24 @@ body.lock {
   padding: 7.5px 9.09px;
   margin: 2.5px 0px;
   text-align: center;
+  margin: 0px 0px 65px 0px;
+  max-width: 90px;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
-.big__date {
-  position: absolute;
-  top: 150px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+.body-big__date {
   font-family: 'HelveticaNeue';
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin: 0px 0px 25px 0px;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
-.big__text {
-  position: absolute;
-  top: 205px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+.body-big__text {
   font-family: 'HelveticaNeue';
   font-weight: 400;
   font-size: 24px;
@@ -1888,82 +1896,93 @@ body.lock {
   text-align: center;
   color: #FFFFFF;
   min-width: 411px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  margin: 0px 0px 45px 0px;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
-.big__name {
-  position: absolute;
-  top: 330px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+.body-big__name {
   font-family: 'HelveticaNeue';
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
   color: #FFFFFF;
+  margin: 0px 0px 60px 0px;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
-.big__eye-comments {
+.body-big__eye-comments {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  bottom: 60px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.big__eye-comments .big__eye-icon,
-.big__eye-comments .big__comments-icon {
+.body-big__eye-comments .body-big__eye-icon,
+.body-big__eye-comments .body-big__comments-icon {
   padding: 0px 14px 0px 0px;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
-.big__eye-comments .big__eye-icon-number,
-.big__eye-comments .big__comments-icon-number {
+.body-big__eye-comments .body-big__eye-icon-number,
+.body-big__eye-comments .body-big__comments-icon-number {
   font-family: 'HelveticaNeue-CondensedBold';
   font-weight: bold;
   font-size: 12px;
   line-height: 30px;
   color: #D8D8D8;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
-.big__eye-comments .big__eye-icon-number {
+.body-big__eye-comments .body-big__eye-icon-number {
   padding: 0px 24px 0px 0px;
 }
 
+.body-big__eye-comments .body-big__eye-icon rect {
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.body-big__eye-comments .body-big__comments-icon rect {
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
 @media (min-width: 1025px) {
-  .big:hover {
+  .body-big {
+    -webkit-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+  }
+  .body-big:hover {
     -webkit-transform: scale(1.01);
             transform: scale(1.01);
-    background-color: #34c759;
+    background-color: #34c759ad;
   }
-  .big:hover img {
+  .body-big:hover img {
     opacity: 0.3;
   }
-  .big:hover .big__text,
-  .big:hover .big__date,
-  .big:hover .big__name,
-  .big:hover .big__eye-icon-number,
-  .big:hover .big__comments-icon-number {
+  .body-big:hover .body-big__text,
+  .body-big:hover .body-big__date,
+  .body-big:hover .body-big__name,
+  .body-big:hover .body-big__eye-icon-number,
+  .body-big:hover .body-big__comments-icon-number {
     color: #000;
   }
-  .big:hover .big__meal {
+  .body-big:hover .body-big__meal {
     background-color: #000;
   }
-  .big:hover .big__back-icon img {
+  .body-big:hover .body-big__back-icon img {
     background-color: #000;
   }
-  .big:hover .big__eye-icon rect {
+  .body-big:hover .body-big__eye-icon rect {
     fill: #000;
   }
-  .big:hover .big__comments-icon rect {
+  .body-big:hover .body-big__comments-icon rect {
     fill: #000;
   }
 }
@@ -2071,6 +2090,9 @@ body.lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.small__eye-icon rect {
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
@@ -2092,6 +2114,9 @@ body.lock {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+}
+
+.small__comments-icon rect {
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
@@ -2107,8 +2132,12 @@ body.lock {
 }
 
 @media (min-width: 1025px) {
+  .small {
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+  }
   .small:hover {
-    background: #34C759;
+    background: #34c759a1;
   }
   .small:hover .small__text,
   .small:hover .small__date,
