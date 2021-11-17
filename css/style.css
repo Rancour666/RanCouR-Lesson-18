@@ -634,13 +634,25 @@ body.lock {
   }
 }
 
+@media (max-width: 767px) {
+  .fullscreen__title {
+    font-size: 52px;
+  }
+}
+
 @media (max-width: 660px) {
   .fullscreen__title {
     font-size: 42px;
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 550px) {
+  .fullscreen__title {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 485px) {
   .fullscreen__title {
     font-size: 32px;
     line-height: 60px;
@@ -648,9 +660,16 @@ body.lock {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .fullscreen__title {
     line-height: 44px;
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 320px) {
+  .fullscreen__title {
+    line-height: 40px;
     font-size: 26px;
   }
 }
