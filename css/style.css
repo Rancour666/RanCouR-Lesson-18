@@ -1243,6 +1243,12 @@ body {
   font-size: 32px;
   line-height: 30px;
   color: #D9D9D9;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.dish-card-content__title:hover {
+  color: #34c759;
 }
 
 .dish-card-content__subtitle {
