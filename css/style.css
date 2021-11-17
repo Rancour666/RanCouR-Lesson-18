@@ -1449,12 +1449,19 @@ body {
           column-gap: 24px;
 }
 
+.chefs-card__data:hover .chefs-card__chef-image {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
 .chefs-card__chef-image {
   border-radius: 50%;
   overflow: hidden;
   min-width: 65px;
   min-height: 65px;
   position: relative;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 @media (max-width: 768px) {
